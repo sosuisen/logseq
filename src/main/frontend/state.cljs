@@ -206,6 +206,11 @@
      :srs/mode?                             false
 
      :srs/cards-due-count                   nil
+
+     ;; login, userinfo, token, ...
+     :auth/refresh-token                    nil
+     :auth/access-token                     nil
+     :auth/id-token                         nil
      })))
 
 ;; block uuid -> {content(String) -> ast}
@@ -1035,6 +1040,7 @@
 
 (defn logged?
   "Whether the user has logged in."
+  {:deprecated "-"}
   []
   (some? (get-name)))
 
@@ -1607,6 +1613,7 @@
     (->> (sub :sidebar/blocks)
          (filter #(= (first %) current-repo)))))
 
+
 (defn toggle-collapsed-block!
   [block-id]
   (let [current-repo (get-current-repo)]
@@ -1624,3 +1631,24 @@
 (defn get-modal-id
   []
   (:modal/id @state))
+
+(defn set-auth-id-token
+  [id-token]
+  (set-state! :auth/id-token id-token))
+
+(defn set-auth-refresh-token
+  [refresh-token]
+  (set-state! :auth/refresh-token refresh-token))
+
+(defn set-auth-access-token
+  [access-token]
+  (set-state! :auth/access-token access-token))
+
+(defn get-auth-id-token []
+  (:auth/id-token @state))
+
+(defn get-auth-access-token []
+  (:auth/access-token @state))
+
+(defn get-auth-refresh-token []
+  (:auth/refresh-token @state))

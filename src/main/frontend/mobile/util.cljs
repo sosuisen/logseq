@@ -1,7 +1,8 @@
 (ns frontend.mobile.util
   (:require ["@capacitor/core" :refer [Capacitor registerPlugin]]
             ["@capacitor/splash-screen" :refer [SplashScreen]]
-            [clojure.string :as string]))
+            [clojure.string :as string]
+            [promesa.core :as p]))
 
 (defn platform []
   (.getPlatform Capacitor))
@@ -22,9 +23,21 @@
 
 (defonce folder-picker (registerPlugin "FolderPicker"))
 (when (native-ios?)
- (defonce download-icloud-files (registerPlugin "DownloadiCloudFiles")))
+  (defonce download-icloud-files (registerPlugin "DownloadiCloudFiles"))
+  (defonce ios-file-container (registerPlugin "FileContainer"))
+  )
+
 (when (native-ios?)
-  (defonce ios-file-container (registerPlugin "FileContainer")))
+  (defonce fs-watcher (registerPlugin "FsWatcher"))
+  ;; FIXME: circular reference of
+  ;; frontend.fs.watcher-handler/handle-changed!
+  (p/do!
+   (.removeAllListeners fs-watcher)
+   (.addListener fs-watcher "watcher"
+                 (fn [^js event]
+                   (frontend.fs.watcher-handler/handle-changed!
+                    (.-event event)
+                    (js->clj event :keywordize-keys true))))))
 
 (defn sync-icloud-repo [repo-dir]
   (let [repo-name (-> (string/split repo-dir "Documents/")
@@ -32,7 +45,7 @@
                       string/trim
                       js/decodeURI)]
     (.syncGraph download-icloud-files
-                       (clj->js {:graph repo-name}))))
+                (clj->js {:graph repo-name}))))
 
 (defn hide-splash []
   (.hide SplashScreen))

@@ -35,6 +35,7 @@
    (.removeAllListeners fs-watcher)
    (.addListener fs-watcher "watcher"
                  (fn [^js event]
+                   #_:clj-kondo/ignore
                    (frontend.fs.watcher-handler/handle-changed!
                     (.-event event)
                     (js->clj event :keywordize-keys true))))))

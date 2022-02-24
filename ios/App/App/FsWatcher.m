@@ -8,6 +8,6 @@
 #import <Capacitor/Capacitor.h>
 
 CAP_PLUGIN(FsWatcher, "FsWatcher",
-           CAP_PLUGIN_METHOD(watch, CAPPluginReturnCallback);
+           CAP_PLUGIN_METHOD(watch, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(unwatch, CAPPluginReturnPromise);
 )

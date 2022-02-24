@@ -7,7 +7,6 @@
 
 import Foundation
 import Capacitor
-import DirectoryWatcher
 
 // MARK: Watcher Plugin
 

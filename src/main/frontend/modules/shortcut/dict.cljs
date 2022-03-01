@@ -527,4 +527,6 @@
                :command.sidebar/open-today-page         "Abrir a página de hoje na barra lateral direita"
                :command.ui/select-theme-color           "Selecionar as cores do tema disponível"
                :command.ui/toggle-cards                 "Trocar cartas"
-               :command.ui/toggle-left-sidebar          "Trocar barra lateral esquerda"}}))
+               :command.ui/toggle-left-sidebar          "Trocar barra lateral esquerda"}
+
+     :ja      {}}))

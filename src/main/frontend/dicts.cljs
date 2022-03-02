@@ -3580,7 +3580,7 @@
         :command-palette/prompt "Набери команду"}
 
    :ja {:tutorial/text (rc/inline "tutorial-ja.md")
-        :tutorial/dummy-notes (rc/inline "dummy-notes-en.md")
+        :tutorial/dummy-notes (rc/inline "dummy-notes-ja.md")
         :on-boarding/title "こんにちは、Logseq へようこそ!"
         :on-boarding/sharing "共有"
         :on-boarding/is-a "は"
@@ -3684,7 +3684,7 @@
         :right-side-bar/contents "コンテンツ"
         :right-side-bar/favorites "Favorites"
         :right-side-bar/page-graph "ページグラフ"
-        :right-side-bar/block-ref "ブロック参照"
+        :right-side-bar/block-ref "参照ブロック"
         :right-side-bar/journals "日誌"
         :right-side-bar/graph-view "グラフビュー"
         :right-side-bar/all-pages "全ページ"
@@ -3724,8 +3724,8 @@
         :format/preferred-mode "What's your preferred mode?"
         :format/markdown "Markdown"
         :format/org-mode "Org mode"
-        :reference/linked "Linked reference"
-        :reference/unlinked-ref "Unlinked references"
+        :reference/linked "リンクありの参照元"
+        :reference/unlinked-ref "リンクなしの参照元"
         :project/setup "Setup a public project on Logseq"
         :project/location "All published pages will be located under"
         :project/sync-settings "Sync project settings"
@@ -3796,8 +3796,8 @@
         :content/copy "コピー"
         :content/cut "カット"
         :content/make-todos "Make {1}s"
-        :content/copy-block-ref "ブロック参照をコピー"
-        :content/copy-block-emebed "添付ブロックをコピー"
+        :content/copy-block-ref "参照ブロックをコピー"
+        :content/copy-block-emebed "埋め込みブロックをコピー"
         :content/focus-on-block "ブロック上でフォーカス"
         :content/open-in-sidebar "サイドバーで開く"
         :content/copy-as-json "JSON形式でコピー"
@@ -3955,7 +3955,7 @@
 
         :pdf/copy-ref "参照をコピー"
         :pdf/copy-text "テキストをコピー"
-        :pdf/linked-ref "リンクされた参照"
+        :pdf/linked-ref "リンクありの参照元"
         :pdf/toggle-dashed "Dashed style for area highlight"
 
         :updater/new-version-install "新しいバージョンがダウンロードされました。"

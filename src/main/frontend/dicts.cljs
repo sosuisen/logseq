@@ -3579,12 +3579,12 @@
 
         :command-palette/prompt "Набери команду"}
 
-   :ja {:tutorial/text (rc/inline "tutorial-en.md")
+   :ja {:tutorial/text (rc/inline "tutorial-ja.md")
         :tutorial/dummy-notes (rc/inline "dummy-notes-en.md")
         :on-boarding/title "こんにちは、Logseq へようこそ!"
         :on-boarding/sharing "共有"
         :on-boarding/is-a "は"
-        :on-boarding/vision "プライバシーファースト・オープンソースの知識管理共有プラットフォーム"
+        :on-boarding/vision "プライバシーファーストで知識管理とコラボレーションを実現するオープンソースプラットフォーム"
         :on-boarding/local-first "ローカルファースト"
         :on-boarding/non-linear "非線形"
         :on-boarding/outliner "アウトライナー"

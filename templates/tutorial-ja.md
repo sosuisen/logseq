@@ -27,5 +27,5 @@
 
     - DONE ページ作成
     - CANCELED [#C] 1000ブロック以上のページを作成する
-- That's it! You can create more bullets or open a local directory to import some notes now!
-- You can also download our desktop app at https://github.com/logseq/logseq/releases
+- 以上です！ここから、さらにブロックを作成したり、ローカルディレクトリを開いてノートをインポートすることができます！
+- デスクトップアプリをダウンロードするならこちら： https://github.com/logseq/logseq/releases

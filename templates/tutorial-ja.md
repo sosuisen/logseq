@@ -21,7 +21,7 @@
 - 4. 「ToDo」「作業中」(Doing)「完了」(Done)や優先度のようなタスク管理はサポートしていますか？
     - はい。キーボードで`/`とタイプし、表示されるメニューからToDo管理のための TODO、DOING、DONE、NOW、LATER や優先度の A、B、Cという語をタイプするか選んでください。（下はその例です）
     - NOW [#A] "見本のノートの作り方" のチュートリアル
-    - LATER [#A] [:a {:href "https://twitter.com/TechWithEd" :target "_blank"} "@TechWithEd"] の作ったこちらのビデオを見てください（※ビデオは英語です。ごめんなさい。）これは Logseq でローカルフォルダを開く方法を示しています。
+    - LATER [#A] [:a {:href "https://twitter.com/TechWithEd" :target "_blank"} "@TechWithEd"] の作ったこちらのビデオを見てください（※ビデオは英語です。）これは Logseq でローカルフォルダを開く方法を示しています。
 
     {{tutorial-video}}
 

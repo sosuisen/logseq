@@ -3649,7 +3649,7 @@
         :help/terms "Terms"
         :help/community "Discord community"
         :help/awesome-logseq "Awesome Logseq"
-        :help/shortcuts "Keyboard shortcuts"
+        :help/shortcuts "キーボードショートカット"
         :help/shortcuts-triggers "Triggers"
         :help/shortcut "Shortcut"
         :help/slash-autocomplete "Slash autocomplete"

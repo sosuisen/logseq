@@ -3642,7 +3642,7 @@
         :help/roadmap "ロードマップ"
         :help/bug "バグ報告"
         :help/feature "機能リクエスト"
-        :help/changelog "Changelog"
+        :help/changelog "更新履歴"
         :help/blog "Logseq ブログ"
         :help/docs "ドキュメント"
         :help/privacy "プライバシーポリシー"

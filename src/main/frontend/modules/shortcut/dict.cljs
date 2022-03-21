@@ -606,5 +606,5 @@
                :command.editor/delete-selection         "選択したブロックを削除"
                :command.editor/toggle-open-blocks       "ブロック展開のトグル（全てのブロックを折りたたみ／展開）"
                :command.ui/toggle-cards                 "フラッシュカードのトグル"
-               :command.ui/toggle-left-sidebar          "左サイドバーのトグル"}
+               :command.ui/toggle-left-sidebar          "左サイドバーのトグル"
                }}))

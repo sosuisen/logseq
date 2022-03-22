@@ -559,7 +559,7 @@
                :command.go/search                       "検索"
                :command.go/backward                     "戻る"
                :command.go/forward                      "前へ"
-               :command.go/flashcards                   "フラッシュカードのトグル"              
+               :command.go/flashcards                   "フラッシュカードのトグル"
                :command.go/home                         "ホームへ移動"
                :command.go/all-pages                    "全ページへ移動"
                :command.go/graph-view                   "グラフビューへ移動"

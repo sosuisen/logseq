@@ -3210,7 +3210,6 @@
         :select.graph/add-graph "Sim, adicionar outro grafo"}
 
    :ru {:on-boarding/title "Привет, добро пожаловать в Logseq!"
-
         :on-boarding/sharing "распространения"
         :on-boarding/is-a " "
         :on-boarding/vision "Безопасная, открытая платформа для уравления базой знаний и совместной работы."
